@@ -1,0 +1,147 @@
+@import "./imports/_normalize.scss";
+
+*{ box-sizing: border-box }
+img {
+   width: 100%;
+   display: block;
+}
+
+#app-container{
+   max-width: 1024px;
+   margin: 0 auto;
+
+
+.jumbotron{
+  background: url("../images/roomies-eating-together-bg.jpg")center center no-repeat;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 5px;
+  margin-bottom: 0px;
+  .room-logo{
+  width: 25%;
+  margin-left: 20px;
+  vertical-align: top;
+  }
+  .navbar-btn{
+    margin-top: 30px;
+    margin-bottom: 35px;
+    background-color: black;
+    color: white;
+    }
+  }
+.living-container{
+text-align: center;
+color: white;
+  }
+#searchbox{
+  margin-bottom: 80px;
+}
+.room-container{
+  background: url("../images/buildings-yellow-green.svg")center center no-repeat;
+  background-color: lightblue;
+  color: white;
+  text-align: center;
+  // height: 150px;
+  padding-top: 5px;
+  padding-bottom: 60px;
+  // margin-bottom: 0;
+  p{
+    margin-bottom: 15px;
+    size: 50px;
+    }
+  button{
+    color: white;
+    background-color: black;
+  }
+ }
+ .roommate-finder{
+   text-align: center;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   h1{
+     color: lightblue;
+     font-size: 40px;
+  }
+ }
+
+ .recommended{
+   background: url("../images/happy-roomies-bg.jpg")center center no-repeat;
+   text-align: center;
+   color: white;
+   margin-top: 50px;
+   margin-bottom: 50px;
+  .rec-photos{
+    width: 20%;
+    }
+    ul{
+      margin-top: 100px;
+    }
+   .send-bar li{
+    display: inline-block;
+    margin: 0 auto;
+   }
+  }
+
+.success-stories{
+  text-align: center;
+  margin: 0 auto;
+   h1{
+     color: lightblue;
+     font-size: 40px;
+   }
+}
+   .photo{
+     width: 50%;
+     border: white;
+   }
+   .row-stories{
+     margin: 0 auto;
+   }
+
+
+
+.featured-rooms-container{
+  background-color: #f7c760;
+  text-align: center;
+  border-color:#f7c760;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  button{
+   color: white;
+   background-color: black;
+  }
+ }
+ .featured-header{
+   text-align: center;
+   h1{
+     margin-bottom: 50px;
+     padding-top: 50px;
+  }
+ }
+ .profile-grid{
+   text-align: center;
+   h3{
+     color: lightblue;
+  }
+ }
+ .footer-container{
+   background-color: black;
+   color: white;
+   li{
+     background-color: black;
+     display: inline-block;
+     vertical-align: top;
+     width: 24%;
+     margin-top: 10px;
+     }
+     .room-logo{
+       width: 50%;
+       vertical-align: top;
+     }
+     .play{
+       width: 70%;
+       border: white;
+     }
+
+   }
+  }
