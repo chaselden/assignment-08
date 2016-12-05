@@ -1,5 +1,10 @@
 @import "./imports/_normalize.scss";
 
+@mixin media-query($screen-size){
+   @media screen and (min-width: $screen-size){
+      @content;
+   }
+}
 *{ box-sizing: border-box }
 img {
    width: 100%;
@@ -14,14 +19,31 @@ img {
 .jumbotron{
   background: url("../images/roomies-eating-together-bg.jpg")center center no-repeat;
   text-align: center;
-  padding-bottom: 40px;
-  padding-top: 5px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+  padding-top: 0;
+  background-size: cover;
+  padding-bottom: 100px;
   .room-logo{
   width: 25%;
   margin-left: 20px;
   vertical-align: top;
   }
+.nav-menu{
+  float: right;
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 5px;
+  width: 50%;
+  color: white;
+  p{display: none;}
+  .ham-menu{display: block;}
+  @include media-query(768px){
+     p{display: block;}
+     .ham-menu{display: none;}
+  }
+
+}
+
   .navbar-btn{
     margin-top: 30px;
     margin-bottom: 35px;
@@ -33,8 +55,21 @@ img {
 text-align: center;
 color: white;
   }
-#searchbox{
-  margin-bottom: 80px;
+.search-bx{
+  width: 80%;
+  margin: 0 auto;
+   #search-sidebar{
+     color: white;
+     width: 30%;
+     background: lightblue;
+   .search-txt{
+      display: none;
+      @include media-query(768px){
+      display: inline-block;
+      }
+   }
+
+  }
 }
 .room-container{
   background: url("../images/buildings-yellow-green.svg")center center no-repeat;
@@ -49,7 +84,7 @@ color: white;
     margin-bottom: 15px;
     size: 50px;
     }
-  button{
+  .post-btn{
     color: white;
     background-color: black;
   }
@@ -64,23 +99,56 @@ color: white;
   }
  }
 
- .recommended{
-   background: url("../images/happy-roomies-bg.jpg")center center no-repeat;
+ .recommend-jumbo{
+   background: url('../images/happy-roomies-bg.jpg')center,center,no-repeat;
+   background-size: cover;
+   color: #fff;
    text-align: center;
-   color: white;
-   margin-top: 50px;
-   margin-bottom: 50px;
-  .rec-photos{
-    width: 20%;
-    }
-    ul{
-      margin-top: 100px;
-    }
-   .send-bar li{
-    display: inline-block;
-    margin: 0 auto;
-   }
+   padding-bottom: 50px;
+   .social-media{
+
+  .share-txt{
+     @include media-query(768px){
+        margin: 0 auto;
+        display: inline-block;
+        padding-right: 50px;
+     }
+
+     .share{
+        display: block;
+        @include media-query (768px){
+           display: inline-block;
+           padding: 0 10px;
+        }
+     }
   }
+    .social-icon{
+       width: 20px;
+       height: 20px;
+       background: lightblue;
+       border-radius: 50%;
+       margin: 0 10px;
+    }
+      .email-input-box{
+         width: 80%;
+         max-width: 400px;
+         margin: 0 auto;
+         @include media-query (768px){
+            width: 60%;
+            display: inline-block;
+         }
+   #email-bar{max-width: 300px;}
+   #email-sidebar{
+        color: white;
+        height: 34px;
+        max-width: 100px;
+        width: 30%;
+        background: grey;
+        border: none;
+         }
+   }
+ }
+}
 
 .success-stories{
   text-align: center;
@@ -88,6 +156,7 @@ color: white;
    h1{
      color: lightblue;
      font-size: 40px;
+     padding-bottom: 15px;
    }
 }
    .photo{
@@ -98,17 +167,17 @@ color: white;
      margin: 0 auto;
    }
 
-
-
 .featured-rooms-container{
   background-color: #f7c760;
   text-align: center;
   border-color:#f7c760;
   margin: 0 auto;
   padding-bottom: 50px;
-  button{
+  padding-left: 80px;
+  padding-right: 80px;
+  .see-more-btn{
    color: white;
-   background-color: black;
+   background-color: #35414E;
   }
  }
  .featured-header{
@@ -125,10 +194,13 @@ color: white;
   }
  }
  .footer-container{
-   background-color: black;
+   @include media-query(768px){
+     display: block;
+  }
+   background-color: #35414E;
    color: white;
    li{
-     background-color: black;
+     background-color: #35414E;
      display: inline-block;
      vertical-align: top;
      width: 24%;

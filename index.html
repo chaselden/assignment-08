@@ -15,9 +15,13 @@
               <li class="logo">
                 <img src="./images/room-me-logo-white.svg" class= "room-logo">
               </li>
-              <li role="presentation" class="active"><a href="#">Home</a></li>
-              <li role="presentation"><a href="#">Profile</a></li>
-              <li role="presentation"><a href="#">Messages</a></li>
+              <div class="nav-menu">
+                  <p>Register | Login </p>
+                  <i class="fa fa-bars ham-menu" aria-hidden="true"></i>
+
+              <!-- <li role="presentation" class="active"><a href="#">Home</a></li> -->
+              <!-- <li role="presentation"><a href="#">Profile</a></li> -->
+              <!-- <li role="presentation"><a href="#">Messages</a></li> -->
             </ul>
 
             <div class="living-container">
@@ -26,17 +30,17 @@
                <p> Find your perfect roommate</p>
            </div>
 
-             <form id="searchbox" action="">
-                <input id="search" type="text" placeholder="Where are you searching?">
-                <input id="submit" type="submit" value="Search">
-             </form>
+           <div class="input-group search-bx">
+               <input type="text" class="form-control" placeholder="where are you searching?" aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="search-sidebar" ><i class="fa fa-search" aria-hidden="true"></i><span class="search-txt"> Search</span></span>
+          </div>
           </div>
 
           <div class="room-container">
              <h3>Do you have a room for rent?</h3>
                <p>With room.me it's easy to find roommates who match your personality.</p>
 
-               <button type="button" class="btn btn-default navbar-btn">Post Your Room</button>
+               <p><a class="btn btn-primary btn-lg post-btn" href="#" role="button">Post Your Room</a></p>
            </div>
 
           <div class="roommate-finder">
@@ -94,31 +98,23 @@
                  <h3>Find out how it works</h3>
           </div>
 
-          <div class="recommended">
-            <h1>Recommend #roomdotme</h1>
-              <p>Do you know someone looking for or renting out a room? Tell them about us.</p>
+          <div class="jumbotron recommend-jumbo">
+               <h3>Recommend #roomdotme</h3>
+                  <p>Do you know someone looking for or renting out a room? Tell them about us.</p>
 
-            <div class="send-bar">
-              <ul>
-                <li class="fb">
-                  <img src="./images/1474934093_facebook.png" class="rec-photos">
-                </li>
-                <li class="gp">
-                  <img src="./images/1474934156_googleplus.png " class="rec-photos">
-                </li>
-                <li class="tw">
-                  <img src="./images/1474934117_twitter.png" class="rec-photos">
-                </li>
-                <li class="bar">
-                    <form method="get" action="#">
-                      <input placeholder="Search" type="search" name="q" id="search-box" />
-                    </form>
-                </li>
-              </ul>
-
+            <div class="social-media">
+                  <p class="share-txt">
+                     <span class="share">Share on</span>
+                        <i class="fa fa-facebook social-icon" aria-hidden="true"></i>
+                           <i class="fa fa-google-plus social-icon" aria-hidden="true"></i>
+                        <i class="fa fa-twitter social-icon" aria-hidden="true"></i>
+                     <span class="share">or</span>
+                  </p>
+                  <div class="input-group email-input-box">
+                       <input type="text" class="form-control" id="email-bar" placeholder="enter a friends email address" aria-describedby="basic-addon2">
+                       <span class="input-group-addon" id="email-sidebar" ><i class="fa fa-paper-plane-o" aria-hidden="true"></i></i></span>
+                  </div>
             </div>
-
-
           </div>
 
           <div class="success-stories">
@@ -183,8 +179,8 @@
                 <div class="thumbnail">
                   <img src="./images/featured-01.jpg">
                   <div class="caption">
-                    <h3>-----</h3>
-                    <p>...</p>
+                    <h5>2 Bedroom available in a 3 Br/2...</h5>
+                    <p>$2,200 | Oct 1,2016</p>
                   </div>
                 </div>
               </div>
@@ -194,8 +190,8 @@
                 <div class="thumbnail">
                   <img src="./images/featured-02.jpg">
                   <div class="caption">
-                    <h3>-----</h3>
-                    <p>...</p>
+                    <h5>Looking for a great roomie - BH...</h5>
+                    <p>1,200 | Nov 1,2016</p>
                   </div>
                 </div>
               </div>
@@ -204,8 +200,8 @@
                 <div class="thumbnail">
                   <img src="./images/featured-03.jpg">
                   <div class="caption">
-                    <h3>-----</h3>
-                    <p>...</p>
+                    <h5>Large Double Available</h5>
+                    <p>$1,000 | Sep 8,2016 - Jan 1,2017</p>
                   </div>
                 </div>
               </div>
@@ -213,8 +209,7 @@
                       <br/>
                       <br/>
                       <br/>
-
-             <button type="button" class="btn btn-default navbar-btn">See More Rooms</button>
+                    <p class="text-center"><a class="btn btn-primary btn-lg see-more-btn" href="#" role="button">See More Rooms</a></p>
           </div>
 
           <div class="footer-container">
@@ -228,13 +223,13 @@
                       <br/>
                 <h6>© 2015 room.me</h6>
               </li>
-              <li class="links">
+              <li class="footer-links text-center">
                 <h6>Quick Links</h6>
-                       <br/>
-                <h6>How It Works</h6>
-                <h6>FAQ</h6>
-                <h6>Blog</h6>
-                <h6>Imprint</h6>
+                   <br/>
+                <h6><a href="#">How It Works</a></h6>
+                <h6><a href="#">FAQ</a></h6>
+                <h6><a href="#">Blog</a></h6>
+                <h6><a href="#">Imprint</a></h6>
               </li>
               <li class="rooms">
                 <h6>Rooms for Rent</h6>

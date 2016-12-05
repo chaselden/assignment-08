@@ -377,13 +377,30 @@ img {
   #app-container .jumbotron {
     background: url("../images/roomies-eating-together-bg.jpg") center center no-repeat;
     text-align: center;
-    padding-bottom: 40px;
-    padding-top: 5px;
-    margin-bottom: 0px; }
+    margin-bottom: 0;
+    padding-top: 0;
+    background-size: cover;
+    padding-bottom: 100px; }
     #app-container .jumbotron .room-logo {
       width: 25%;
       margin-left: 20px;
       vertical-align: top; }
+    #app-container .jumbotron .nav-menu {
+      float: right;
+      text-align: right;
+      padding-top: 5px;
+      padding-right: 5px;
+      width: 50%;
+      color: white; }
+      #app-container .jumbotron .nav-menu p {
+        display: none; }
+      #app-container .jumbotron .nav-menu .ham-menu {
+        display: block; }
+      @media screen and (min-width: 768px) {
+        #app-container .jumbotron .nav-menu p {
+          display: block; }
+        #app-container .jumbotron .nav-menu .ham-menu {
+          display: none; } }
     #app-container .jumbotron .navbar-btn {
       margin-top: 30px;
       margin-bottom: 35px;
@@ -392,8 +409,18 @@ img {
   #app-container .living-container {
     text-align: center;
     color: white; }
-  #app-container #searchbox {
-    margin-bottom: 80px; }
+  #app-container .search-bx {
+    width: 80%;
+    margin: 0 auto; }
+    #app-container .search-bx #search-sidebar {
+      color: white;
+      width: 30%;
+      background: lightblue; }
+      #app-container .search-bx #search-sidebar .search-txt {
+        display: none; }
+        @media screen and (min-width: 768px) {
+          #app-container .search-bx #search-sidebar .search-txt {
+            display: inline-block; } }
   #app-container .room-container {
     background: url("../images/buildings-yellow-green.svg") center center no-repeat;
     background-color: lightblue;
@@ -404,7 +431,7 @@ img {
     #app-container .room-container p {
       margin-bottom: 15px;
       size: 50px; }
-    #app-container .room-container button {
+    #app-container .room-container .post-btn {
       color: white;
       background-color: black; }
   #app-container .roommate-finder {
@@ -414,25 +441,53 @@ img {
     #app-container .roommate-finder h1 {
       color: lightblue;
       font-size: 40px; }
-  #app-container .recommended {
-    background: url("../images/happy-roomies-bg.jpg") center center no-repeat;
+  #app-container .recommend-jumbo {
+    background: url("../images/happy-roomies-bg.jpg") center, center, no-repeat;
+    background-size: cover;
+    color: #fff;
     text-align: center;
-    color: white;
-    margin-top: 50px;
-    margin-bottom: 50px; }
-    #app-container .recommended .rec-photos {
-      width: 20%; }
-    #app-container .recommended ul {
-      margin-top: 100px; }
-    #app-container .recommended .send-bar li {
-      display: inline-block;
+    padding-bottom: 50px; }
+    @media screen and (min-width: 768px) {
+      #app-container .recommend-jumbo .social-media .share-txt {
+        margin: 0 auto;
+        display: inline-block;
+        padding-right: 50px; } }
+    #app-container .recommend-jumbo .social-media .share-txt .share {
+      display: block; }
+      @media screen and (min-width: 768px) {
+        #app-container .recommend-jumbo .social-media .share-txt .share {
+          display: inline-block;
+          padding: 0 10px; } }
+    #app-container .recommend-jumbo .social-media .social-icon {
+      width: 20px;
+      height: 20px;
+      background: lightblue;
+      border-radius: 50%;
+      margin: 0 10px; }
+    #app-container .recommend-jumbo .social-media .email-input-box {
+      width: 80%;
+      max-width: 400px;
       margin: 0 auto; }
+      @media screen and (min-width: 768px) {
+        #app-container .recommend-jumbo .social-media .email-input-box {
+          width: 60%;
+          display: inline-block; } }
+      #app-container .recommend-jumbo .social-media .email-input-box #email-bar {
+        max-width: 300px; }
+      #app-container .recommend-jumbo .social-media .email-input-box #email-sidebar {
+        color: white;
+        height: 34px;
+        max-width: 100px;
+        width: 30%;
+        background: grey;
+        border: none; }
   #app-container .success-stories {
     text-align: center;
     margin: 0 auto; }
     #app-container .success-stories h1 {
       color: lightblue;
-      font-size: 40px; }
+      font-size: 40px;
+      padding-bottom: 15px; }
   #app-container .photo {
     width: 50%;
     border: white; }
@@ -443,10 +498,12 @@ img {
     text-align: center;
     border-color: #f7c760;
     margin: 0 auto;
-    padding-bottom: 50px; }
-    #app-container .featured-rooms-container button {
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px; }
+    #app-container .featured-rooms-container .see-more-btn {
       color: white;
-      background-color: black; }
+      background-color: #35414E; }
   #app-container .featured-header {
     text-align: center; }
     #app-container .featured-header h1 {
@@ -457,10 +514,13 @@ img {
     #app-container .profile-grid h3 {
       color: lightblue; }
   #app-container .footer-container {
-    background-color: black;
+    background-color: #35414E;
     color: white; }
+    @media screen and (min-width: 768px) {
+      #app-container .footer-container {
+        display: block; } }
     #app-container .footer-container li {
-      background-color: black;
+      background-color: #35414E;
       display: inline-block;
       vertical-align: top;
       width: 24%;
